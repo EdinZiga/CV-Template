@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+    CS412 Web App Development Project 6
+    Portfolio Sponsored Project 
+    Author - Edin Ziga 190302192
+	Last edit - January 2nd, 2022
+  -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Dr. John Doe</title>
+        <link rel="icon" type="image/x-icon" href="images/hat-icon-14.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <!-- Animations -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="css/BSstyles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- JQ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Custom CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+    
+    </head>
+
+    <!-- Progress bar -->
+    <body id="page-top">
+        <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+
+        <!-- Navigaton Bar -->
+          <div class="vertical-nav bg-white" id="sideNav">
+            <div class="py-4 px-3 mb-4" style="background-color: #eeeeee;">
+              <div class="media d-flex align-items-center" data-aos="fade-right">
+                  <img src="images/profile.png" alt="Profile Photo" width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                <div class="media-body" data-aos="fade-right">
+                  <h5 class="m-0" style="padding-left: 4%;">Dr. Johnathan
+                    <span class="text-primary">Richards Doe</span></h5>
+                  <p class="font-weight-light text-muted mb-0 "style="padding-left: 4%;"> Web Designer</p>
+                </div>
+              </div>
+            </div>
+          
+            <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Navigation</p>
+          
+            <ul class="nav flex-column bg-white mb-0" id="navbar">
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#about" class="nav-link text-dark font-italic js-scroll-trigger">
+                          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                          About me
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#experience" class="nav-link text-dark font-italic js-scroll-trigger">
+                    <i class="fas fa-briefcase text-primary"></i></i>
+                          Work experience
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#education" class="nav-link text-dark font-italic js-scroll-trigger">
+                    <i class="fas fa-university text-primary"></i>
+                          Education
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#skills" class="nav-link text-dark font-italic js-scroll-trigger">
+                    <i class="fas fa-chart-line text-primary"></i></i></i>
+                          Projects
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#interests" class="nav-link text-dark font-italic js-scroll-trigger">
+                    <i class="far fa-file-word text-primary"></i></i>
+                          Qualities
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#awards" class="nav-link text-dark font-italic js-scroll-trigger">
+                        <i class="fas fa-book text-primary"></i></i>
+                          Research activity
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#dpa" class="nav-link text-dark font-italic js-scroll-trigger">
+                     <i class="far fa-handshake text-primary"></i></i>
+                          Participation in other projects
+                      </a>
+              </li>
+              <li class="nav-item" data-aos="fade-right">
+                <a href="#contact" class="nav-link text-dark font-italic js-scroll-trigger">
+                          <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                          Contact
+                      </a>
+              </li>
+            </ul>
+            
+        </div>
+
+
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content" data-aos="fade-down">
+                    
+                    <h1 class="mb-5">
+                        Dr. Johnathan
+                        <span class="text-primary">Richards Doe</span>
+                    </h1>
+                    
+                    <p class="lead mb-5"><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vivamus bibendum condimentum arcu, eget ultrices ante posuere nec. Suspendisse dolor justo, pulvinar sed mi vel, sagittis maximus nunc. "</i></p>
+
+                    <div class="social-icons">
+                        <a class="social-icon" href="mailto:name@email.com"> <i class="fas fa-envelope"></i></a> 
+                        <a class="social-icon" href="https://www.linkedin.com/" target=”_blank”><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/" target=”_blank”><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/" target=”_blank”><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div style="text-align: right; padding-top: 5vh;">
+                        <span class="material-icons-outlined" style="font-size: 100px;">
+                            <a href="#experience" class="nav-link text-dark font-italic js-scroll-trigger">
+                            keyboard_arrow_down </a>
+                            </span>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            
+             <!-- Radno Iskustvo -->
+             <section class="resume-section" id="experience">
+                <div class="resume-section-content" >
+                    <h2 class="mb-3" data-aos="fade-right">Work experience</h2>
+                    <div class="container">
+                            <div class="row">
+                                <div class="col mx-auto">
+                                    
+                                    <!-- Timeline -->
+                                    <ul class="timeline" >
+                                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow" data-aos="fade-right">
+                                            <div class="timeline-arrow"></div>
+                                            <h3 class="mb-0">Designer</h3>
+                                            <div class="subheading mb-0">"Company" inc.</div>
+                                            <span class="small text-gray">01.01.2010 - Today</span>
+                                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                                        </li>
+                                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow" data-aos="fade-right">
+                                            <div class="timeline-arrow"></div>
+                                            <h3 class="mb-0">Manager</h3>
+                                            <div class="subheading mb-0">"Firm" corp. </div>
+                                            <span class="small text-gray">01.01.2000 - 01.01.2010</span>
+                                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
+                                            <p class="text-small mt-2 font-weight-light">Libero expedita explicabo eius fugiat quia aspernatur autem laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur porro molestiae ipsam! Deleniti.</p>
+                                        </li>
+                                    </ul>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="material-icons-outlined" style="font-size: 100px;">
+                                <a href="#education" class="nav-link text-dark font-italic js-scroll-trigger">
+                                keyboard_arrow_down </a>
+                                </span>
+                        </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+        
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content" >
+                <h2 class="mb-5"data-aos="fade-up">Education</h2>
+                <div class="container">
+                        <div class="row">
+                            <div class="col mx-auto">
+                                
+                                <!-- Timeline 2 -->
+                                <ul class="timeline">
+                                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow" data-aos="fade-up">
+                                        <div class="timeline-arrow"></div>
+                                        <h3 class="mb-0">PhD</h3>
+                                        <div class="subheading mb-0">University of applied knowledge</div>
+                                        <span class="small text-gray">01.01.2008</span>
+                                        </li>
+                                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow" data-aos="fade-up">
+                                        <div class="timeline-arrow"></div>
+                                        <h3 class="mb-0">Master's Degree</h3>
+                                        <div class="subheading mb-0">University of applied knowledge</div>
+                                        <span class="small text-gray">01.01.2005</span>
+                                        </li>
+                                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow" data-aos="fade-up">
+                                        <div class="timeline-arrow"></div>
+                                        <h3 class="mb-0">Bachelor's degree</h3>
+                                        <div class="subheading mb-0">University of applied knowledge</div>
+                                        <span class="small text-gray">01.01.2003</span>
+                                       </li>
+                                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow" data-aos="fade-up">
+                                        <div class="timeline-arrow"></div>
+                                        <h3 class="mb-0">High Scool</h3>
+                                        <span class="small text-gray">2002</span>
+                                        </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: right;">
+                        <span class="material-icons-outlined" style="font-size: 100px;">
+                            <a href="#skills" class="nav-link text-dark font-italic js-scroll-trigger">
+                            keyboard_arrow_down </a>
+                            </span>
+                    </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        
+         <!-- Stručni projekti -->
+         <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5" data-aos="fade-right">Projects</h2>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                       type="button" role="tab" aria-controls="home" aria-selected="true"><div class="subheading mb-0">Most popular</div></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" 
+                      type="button" role="tab" aria-controls="profile" aria-selected="false"><div class="subheading mb-0">Detailed</div></button>
+                    </li>
+                    </ul>
+                    
+                  <div class="tab-content" id="myTabContent">
+                      <!-- Sample -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row"> 
+                            <div class="col"   data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card1.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col"   data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card2.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col"   data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card3.jpg" class="card-img-top" alt="..."> </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col"   data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card4.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row" > 
+                            <div class="col"  data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card5.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col"  data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"> <img src="images/card6.jpg" class="card-img-top" alt="..."> </a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col"   data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card7.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col"  data-aos="fade-down">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="https://www.google.com/"><img src="images/card8.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" >
+                        <div class="row" style="padding-top: 30px;">
+                            <div class="col-xl">
+                                <ul>
+                                    <li>
+                                       
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    </li>
+                                    <li>
+                                        
+                                        Vivamus bibendum condimentum arcu, eget ultrices ante posuere nec.
+                                    </li>
+                                    <li>
+                                      
+                                        Suspendisse dolor justo, pulvinar sed mi vel, sagittis maximus nunc. Etiam bibendum maximus accumsan. Morbi sed egestas turpis, sed tincidunt justo. 
+                                        Donec interdum vehicula sem vel cursus. Cras vehicula convallis velit. Donec sapien nisi, condimentum vel cursus et, fermentum quis neque. 
+                                    </li>
+                                    <li>
+                                        
+                                        Quisque sed neque eget ante rhoncus vehicula vel quis dui. Cras auctor augue at lacus hendrerit, id varius justo euismod.
+                                    </li>
+                                    <li>
+                                        
+                                        Maecenas et ornare nulla, ut faucibus tellus. Quisque consectetur turpis nec mauris aliquam tristique.
+                                    </li>
+                                    <li>
+                                        
+                                        Morbi vel lectus eros. Integer arcu diam, ultricies vitae mauris at, dictum ultrices sem. Nulla id interdum enim, sollicitudin luctus massa.
+
+                                    </li>
+                                    <li>
+                                       
+                                        Quisque vestibulum commodo arcu, sit amet aliquam orci sollicitudin sagittis. Phasellus venenatis risus quis pellentesque laoreet. 
+                                        Nulla facilisi. Etiam convallis iaculis magna at hendrerit. 
+                                    </li>
+                                    <li>
+                                       
+                                        Phasellus efficitur nulla dignissim, posuere leo et, dapibus erat. Ut lobortis consectetur ligula, quis efficitur turpis convallis nec.
+
+                                    </li>
+                                    <li>
+                                        
+                                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer erat dui, vestibulum a mattis non, ornare ut libero. 
+                                    </li>
+                                    <li>
+                                        
+                                        Morbi bibendum tristique lorem, tincidunt convallis felis. 
+                                    </li>
+                                    <li>
+                                       
+                                        Morbi eleifend, orci vitae consectetur congue, tortor mauris blandit ex.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl">
+                                <ul>
+                                <li>
+                                   
+                                    Pellentesque lacinia at dui non venenatis. Cras cursus ipsum ex, eu elementum nibh dictum et. .
+                                    Nam bibendum eros nunc, sit amet facilisis lectus volutpat vitae. Vestibulum rhoncus tincidunt lectus, sed blandit tortor.
+                                </li>
+                                <li>
+                                 
+                                    Aliquam sit amet scelerisque turpis. Fusce dapibus cursus ante, sed pulvinar ex sollicitudin molestie. Mauris malesuada eu erat nec ullamcorper. 
+                                </li>
+                                <li>
+                                  
+                                    Duis in rhoncus arcu. Aenean quis auctor diam. Curabitur aliquam nisl semper, tincidunt augue et, aliquam urna. Sed iaculis mi in massa porttitor interdum. 
+                                </li>
+                                <li>
+                                   
+                                    Pellentesque imperdiet urna eu placerat cursus. Phasellus libero diam, sagittis at rutrum sed, aliquam vel erat. Nulla nec dolor ut felis sollicitudin imperdiet.
+                                </li>
+                                <li>
+                                   
+                                    Mauris ac erat sit amet odio accumsan aliquam at vitae turpis.
+                                </li>
+                                <li>
+                                   
+                                    Pellentesque eget lobortis arcu. Praesent ut lobortis nibh. Integer eros risus, auctor sed placerat et, pulvinar in ligula. Proin sem erat, ultricies eu dolor sed, pharetra congue sem. 
+                                </li>
+                                <li>
+                                  
+                                    Suspendisse fermentum mi odio, in mattis sem posuere eget. 
+                                </li>
+                                <li>
+                                   
+                                    Ut viverra mi vel sem tincidunt, sit amet feugiat elit volutpat. Aenean nec elit tortor. 
+                                </li>
+                                <li>
+                                    
+                                    Maecenas euismod dolor ac sagittis congue. Suspendisse id lacus venenatis, cursus lorem id, vestibulum odio. 
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+
+                  
+
+            </div>
+        </section>        
+        <section class="resume-section" id="custom">
+            <div class="resume-section-content">
+               <div style="text-align: right; ">
+                    <span class="material-icons-outlined" style="font-size: 100px;">
+                        <a href="#interests" class="nav-link text-dark font-italic js-scroll-trigger">
+                        keyboard_arrow_down </a>
+                        </span>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+            <!-- Kvalifikovanost -->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <div class="container rounded" id="text-box" data-aos="fade-right">
+                        <!-- The container -->
+                            <div class="container__wrapper">
+                                <!-- The ribbon -->
+                                <div class="container__ribbon">
+                                </div>
+                            </div>
+                            <h2 class="mb-3" id="text-title">Qualities</h2>
+                    <p>&emsp;&emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum condimentum arcu, eget ultrices ante posuere nec. Suspendisse dolor justo, pulvinar sed mi vel, sagittis maximus nunc. Etiam bibendum maximus accumsan. Morbi sed egestas turpis, sed tincidunt justo. Donec interdum vehicula sem vel cursus. Cras vehicula convallis velit. Donec sapien nisi, condimentum vel cursus et, fermentum quis neque. Quisque sed neque eget ante rhoncus vehicula vel quis dui. Cras auctor augue at lacus hendrerit, id varius justo euismod. Maecenas et ornare nulla, ut faucibus tellus. Quisque consectetur turpis nec mauris aliquam tristique.</p>
+                    <p>&emsp;&emsp;&emsp;Morbi vel lectus eros. Integer arcu diam, ultricies vitae mauris at, dictum ultrices sem. Nulla id interdum enim, sollicitudin luctus massa. Quisque vestibulum commodo arcu, sit amet aliquam orci sollicitudin sagittis. Phasellus venenatis risus quis pellentesque laoreet. Nulla facilisi. Etiam convallis iaculis magna at hendrerit. Phasellus efficitur nulla dignissim, posuere leo et, dapibus erat. Ut lobortis consectetur ligula, quis efficitur turpis convallis nec.</p>
+                    <p>&emsp;&emsp;&emsp;Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer erat dui, vestibulum a mattis non, ornare ut libero. Morbi bibendum tristique lorem, tincidunt convallis felis. Morbi eleifend, orci vitae consectetur congue, tortor mauris blandit ex, ac ultricies neque tortor ac metus. Pellentesque lacinia at dui non venenatis. Cras cursus ipsum ex, eu elementum nibh dictum et. Nam bibendum eros nunc, sit amet facilisis lectus volutpat vitae. Vestibulum rhoncus tincidunt lectus, sed blandit tortor.</p>
+                    <p>&emsp;&emsp;&emsp;Aliquam sit amet scelerisque turpis. Fusce dapibus cursus ante, sed pulvinar ex sollicitudin molestie. Mauris malesuada eu erat nec ullamcorper. Duis in rhoncus arcu. Aenean quis auctor diam. Curabitur aliquam nisl semper, tincidunt augue et, aliquam urna. Sed iaculis mi in massa porttitor interdum. Pellentesque imperdiet urna eu placerat cursus. Phasellus libero diam, sagittis at rutrum sed, aliquam vel erat. Nulla nec dolor ut felis sollicitudin imperdiet. Mauris ac erat sit amet odio accumsan aliquam at vitae turpis.</p>
+                    <p>&emsp;&emsp;&emsp;Pellentesque eget lobortis arcu. Praesent ut lobortis nibh. Integer eros risus, auctor sed placerat et, pulvinar in ligula. Proin sem erat, ultricies eu dolor sed, pharetra congue sem. Suspendisse fermentum mi odio, in mattis sem posuere eget. Ut viverra mi vel sem tincidunt, sit amet feugiat elit volutpat. Aenean nec elit tortor. Maecenas euismod dolor ac sagittis congue. Suspendisse id lacus venenatis, cursus lorem id, vestibulum odio. Suspendisse ac purus condimentum, lacinia augue sed, fermentum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor dolor non augue iaculis vulputate.</p>
+                    <p id="signature" style="padding-top: 5%;"><b>Dr. Jonathan Richards Doe</b></p>
+                        </div>
+                    
+                    <div style="text-align: right; ">
+                        <span class="material-icons-outlined" style="font-size: 100px;">
+                            <a href="#awards" class="nav-link text-dark font-italic js-scroll-trigger">
+                            keyboard_arrow_down </a>
+                            </span>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+        
+        <!-- Naučno – istraživačka aktivnost -->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5"data-aos="fade-up">Research activity</h2>
+                <div class="subheading mb-3" data-aos="fade-up"><b>Works</b></div>
+                <ul class="fa-ul mb-3">
+                    <li data-aos="fade-up">
+                        <span class="fa-li"><i class="fas fa-pen"></i></span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum condimentum arcu, eget ultrices ante posuere nec. Suspendisse dolor justo, pulvinar sed mi vel, sagittis maximus nunc. Etiam bibendum maximus accumsan. 
+                    </li>
+                    <li data-aos="fade-up">
+                        <span class="fa-li"><i class="fas fa-pen"></i></span>
+                        Morbi sed egestas turpis, sed tincidunt justo. Donec interdum vehicula sem vel cursus. Cras vehicula convallis velit. 
+                    </li>
+                    <li data-aos="fade-up">
+                        <span class="fa-li"><i class="fas fa-pen"></i></span>
+                        Donec sapien nisi, condimentum vel cursus et, fermentum quis neque. Quisque sed neque eget ante rhoncus vehicula vel quis dui.
+                    </li>
+                    <li data-aos="fade-up">
+                        <span class="fa-li"><i class="fas fa-pen"></i></span>
+                        Cras auctor augue at lacus hendrerit, id varius justo euismod. Maecenas et ornare nulla, ut faucibus tellus. Quisque consectetur turpis nec mauris aliquam tristique.
+                    </li>
+                    <li data-aos="fade-up">
+                        <span class="fa-li"><i class="fas fa-pen"></i></span>
+                        Morbi vel lectus eros. Integer arcu diam, ultricies vitae mauris at, dictum ultrices sem. 
+                    </li>
+                </ul>
+                <div class="subheading mb-3" data-aos="fade-up"><b>Books</b></div>
+                <ul class="fa-ul mb-3">
+                    <li data-aos="fade-up">
+                        <span class="fa-li"><i class="fas fa-book"></i></span>
+                        Nulla id interdum enim, sollicitudin luctus massa. Quisque vestibulum commodo arcu, sit amet aliquam orci sollicitudin sagittis. 
+                    </li>
+                </ul>
+                <div style="text-align: right; ">
+                    <span class="material-icons-outlined" style="font-size: 100px;">
+                        <a href="#dpa" class="nav-link text-dark font-italic js-scroll-trigger">
+                        keyboard_arrow_down </a>
+                        </span>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        
+        <!-- Učešća drugim projektima i aktivnostima -->
+        <section class="resume-section" id="dpa">
+            <div class="resume-section-content" >
+                <h2 class="mb-5" data-aos="fade-up">Participation in other projects</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl" data-aos="fade-up">
+                            <div class="subheading mb-3"><b>Reginoal</b></div>
+                            <ul class=" mb-3">
+                                <li>
+                                    
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer erat dui, vestibulum a mattis non, ornare ut libero. Morbi bibendum tristique lorem, tincidunt convallis felis. </li>
+                                <li>
+                                    
+                                    Morbi eleifend, orci vitae consectetur congue, tortor mauris blandit ex, ac ultricies neque tortor ac metus. Pellentesque lacinia at dui non venenatis. </li>
+                                <li>
+                                    
+                                    Cras cursus ipsum ex, eu elementum nibh dictum et. Nam bibendum eros nunc, sit amet facilisis lectus volutpat vitae. Vestibulum rhoncus tincidunt lectus, sed blandit tortor.</li>
+                                <li>
+                                    
+                                    Aliquam sit amet scelerisque turpis. Fusce dapibus cursus ante, sed pulvinar ex sollicitudin molestie. Mauris malesuada eu erat nec ullamcorper. Duis in rhoncus arcu. </li>
+                                </ul>
+                        </div>
+                        <div class="col-xl" data-aos="fade-up" data-aos-offset="400">
+                            <div class="subheading mb-3"><b>International</b></div>
+                            <ul class=" mb-3">
+                                <li>
+                                    
+                                    Pellentesque eget lobortis arcu. Praesent ut lobortis nibh. Integer eros risus, auctor sed placerat et, pulvinar in ligula. Proin sem erat, ultricies eu dolor sed, pharetra congue sem. </li>
+                                <li>
+                                    
+                                    Suspendisse fermentum mi odio, in mattis sem posuere eget. Ut viverra mi vel sem tincidunt, sit amet feugiat elit volutpat. </li>
+                                <li>
+                                    
+                                    Aenean nec elit tortor. Maecenas euismod dolor ac sagittis congue. Suspendisse id lacus venenatis, cursus lorem id, vestibulum odio. </li>
+                                <li>
+                                   
+                                    uspendisse ac purus condimentum, lacinia augue sed, fermentum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: right; ">
+                    <span class="material-icons-outlined" style="font-size: 100px;">
+                        <a href="#contact" class="nav-link text-dark font-italic js-scroll-trigger">
+                        keyboard_arrow_down </a>
+                        </span>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+
+           
+
+            <!-- Kontakt -->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <div class="container rounded" id=text-box-contact>
+                        <h2 class="mb-2" data-aos="fade-up">Contact Form</h2>
+                        <div class="row">
+                            <div class="col-md-9 mb-md-0 mb-5">
+                                <div class="form-container">
+                                    <form class="contant-form">
+                                        <div class="row">
+                                        <div class="col">
+                                            <input type="text" class = "name" id="name" placeholder="Name and Surname" data-aos="fade-up">
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" id="email"  placeholder="Email" data-aos="fade-up">
+                                        </div>
+                                        </div>
+                                        <input type="text" id="subject" placeholder="Subject" data-aos="fade-up"></br>
+                                        <textarea  id="message"  placeholder="Your message" cols="30" rows="5" data-aos="fade-up"></textarea></br>
+                                        
+                                                <input type="submit" class="submit rounded btn-primary" value="Send" data-aos="fade-up">
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                        <p class="md-3">123456, North Atlantic Ocean, Earth</p>
+                                    </li>
+                    
+                                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                        <p class="md-3">+1 23 456 789</p>
+                                    </li>
+                    
+                                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                        <p>samplemail@mailprover.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: right; ">
+                        <span class="material-icons-outlined" style="font-size: 100px;">
+                            <a href="#about" class="nav-link text-dark font-italic js-scroll-trigger">
+                            keyboard_arrow_up </a>
+                            </span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              duration:1000
+          }
+          );
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,339 @@
+/* CS412 Web App Development Project 6
+    Portfolio for Mr.sc. Selma Haračić Berbić - Sponsored Project 
+    Author - Edin Ziga 190302192
+    Last edit - January 2nd, 2022
+ */
+ html {
+  scroll-behavior: smooth;
+}
+body {
+    padding-top: 3.375rem;
+    font-family: 'Poppins', sans-serif !important;
+    background: -webkit-linear-gradient(to right, #aaaaaa, #ffffff);
+    background: linear-gradient(to right, #aaaaaa, #ffffff);
+  }
+
+  
+  @media (min-width: 768px) {
+    body {
+      padding-top: 0;
+      padding-left: 17rem;
+    }
+  }
+  /*Text styings*/
+  h1, .h1, h2, .h2, h3, .h3,
+  h4, .h4, h5, .h5, h6, .h6 {
+    text-transform: uppercase;
+  }
+  
+  h1, .h1 {
+    line-height: 1;
+  }
+  
+  p.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+  
+  .subheading {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  /*Icons*/
+  .social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
+  .social-icons .social-icon:hover {
+    background-color: #6c9803;
+  }
+  
+  .dev-icons {
+    font-size: 3rem;
+  }
+  
+
+  /*Global Section Stylings*/
+  section.resume-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 75rem;
+  }
+
+  /*One exception for arrow*/
+  #custom{
+    display: flex;
+    align-items: center;
+    max-width: 75rem;
+    padding-top: 0rem;
+  }
+  section.resume-section .resume-section-content {
+    width: 100%;
+  }
+
+  /*Exceptions for fullscreen and halfscreen sections*/
+  #skills{
+    max-width: 100%;
+    padding-bottom: 0rem;
+  }
+  #text-box{
+    max-width: 65rem ;
+  }
+  /*Global mobile compatabilty*/
+  @media (min-width: 768px) {
+    #about {
+      min-height: 100vh;
+    } 
+  }
+  @media (min-width: 992px) {
+    section.resume-section {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+  
+  
+/* Timeline style */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+
+ul.timeline:before {
+  content: ' ';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+
+li.timeline-item::before {
+  content: ' ';
+  background: #ddd;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Form settings*/
+.form-container{
+  position: relative;
+}
+input,textarea{
+  width: 100%;
+  margin-top: 2rem;
+  border:none;
+  border-bottom: 1px solid black;
+}
+
+.submit{
+  padding: 1rem;
+  text-align: center;
+  background-color: send;
+  cursor: pointer;
+  width: 100px;
+}
+.submit:hover{
+  opacity: 0.6;
+}
+
+/* Progress Bar Styling */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: transparet;
+}
+
+
+.progress-bar {
+  height: 8px;
+  background: #6c9803;
+  width: 0%;
+}
+
+/*Card Settings*/
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: transform .5s ease;
+  }
+  .card:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  .tab-pane .col{
+    padding-top: 3%;
+  }
+
+
+
+
+
+/*Navbar Settings*/
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sideNav.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sideNav {
+    margin-left: -17rem;
+  }
+  #sideNav.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+.flex-column .nav-item:hover{
+  border-bottom: 1px solid #6c9803;
+  background-color: #eeeeee;
+}
+
+
+
+/*Paper text box thingy settings*/
+#text-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  background-color: #ffffff;
+  padding: 5%;
+  text-align: justify;
+  text-justify: inter-word;
+  position: relative;
+}
+#signature{
+  text-align: right;
+}
+#text-title{
+  padding-top: 3%;
+}
+@media (max-width: 768px) {
+  #text-title{
+    padding-top: 5%;
+  }
+}
+@media (max-width: 615px) {
+  #text-title{
+    padding-top: 10%;
+  }
+}
+@media (max-width: 490px) {
+  #text-title{
+    padding-top: 15%;
+  }
+}
+@media (max-width: 400px) {
+  #text-title{
+    padding-top: 20%;
+  }
+}
+
+.container__wrapper {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+.container__ribbon {
+  left: -64px;
+  position: absolute;
+  top: 32px;
+  height: 24px;
+  width: 206px;
+  transform: rotate(-45deg);
+  background-color: rgb(216, 184, 0);
+  text-align: center;
+}
+
+
+/*Contact page post card*/
+#text-box-contact{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 5%;
+  position: relative;
+}
