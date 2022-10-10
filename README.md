@@ -1,5 +1,5 @@
 # CV Template
- Github pages link: https://darkxscar.github.io/CV-Template/
+ Github pages link: https://edinziga.github.io/CV-Template/
 ## Description
  Simple CV Template used for final project in CS412 Web App Development. Incorporates HTML, CSS (with Bootstrap) and basic JS functionality.
 
